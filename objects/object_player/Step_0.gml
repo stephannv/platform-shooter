@@ -17,6 +17,8 @@ if !place_meeting(x, y + 1, object_solid) {
 } else {
 	if keyboard_check(vk_up) {
 		vertical_speed = jump_height;
+		current_x_scale = image_xscale * .8;
+		current_y_scale = image_yscale * 1.4;
 	}
 };
 
@@ -39,3 +41,12 @@ if place_meeting(x, y + vertical_speed, object_solid) {
 // MOVE OBJECT
 x += horizontal_speed;
 y += vertical_speed;
+
+if place_meeting(x, y+1, object_solid) && !place_meeting(x, yprevious + 1, object_solid) {
+	current_x_scale = image_xscale * 1.2;
+	current_y_scale = image_yscale * .8;
+}
+
+// Back scale to normal
+current_x_scale = lerp(current_x_scale, image_xscale, .1);
+current_y_scale = lerp(current_y_scale, image_yscale, .1);
