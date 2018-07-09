@@ -172,6 +172,25 @@
             }
         },
         {
+            "Key": "76627315-8b90-486a-a50d-71e3a98ed9a8",
+            "Value": {
+                "id": "440e8e3a-882b-4156-b5a8-714111e74703",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/object_bullet\/object_bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f18d93e-48c3-4310-84f5-c34251e12673",
             "Value": {
                 "id": "540cea31-cbb5-4a48-9039-438e0f7987e8",
@@ -321,6 +340,25 @@
                 ],
                 "resourcePath": "views\/c32e7ddf-29f0-4e81-8672-ee21493f5c6a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cdaef3fb-0b5b-4f53-9351-017703bb3c97",
+            "Value": {
+                "id": "f598ef66-c807-4716-ac71-b75e0c47a00e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite_bullet\/sprite_bullet.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
