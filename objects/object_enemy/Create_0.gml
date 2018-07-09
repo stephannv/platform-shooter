@@ -6,3 +6,8 @@ movement_speed = 1;
 horizontal_speed_push = 0;
 vertical_speed_push = 0;
 health_points = 4;
+
+STATE_CHASING = 0;
+STATE_ATTACKING = 1;
+STATE_HURT = 2;
+current_state = STATE_CHASING;
