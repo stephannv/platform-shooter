@@ -1,6 +1,8 @@
 /// @description Player movement
 
-
+if health_points <= 0 {
+	instance_destroy();
+}
 // USER INPUT
 var horizontal_speed_factor = keyboard_check(vk_right) - keyboard_check(vk_left)
 

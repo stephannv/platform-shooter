@@ -9,6 +9,7 @@ acceleration = 1;
 slowdown_factor = .3;
 jump_height = -8;
 bullet_cooldown = room_speed / 6;
+health_points = 5;
 current_x_scale = image_xscale;
 current_y_scale = image_yscale;
 
