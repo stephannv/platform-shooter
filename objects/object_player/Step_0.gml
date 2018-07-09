@@ -22,25 +22,7 @@ if !place_meeting(x, y + 1, object_solid) {
 	}
 };
 
-
-// CHECKING COLLISIONS
-if place_meeting(x + horizontal_speed, y, object_solid) {
-	while !place_meeting(x + sign(horizontal_speed), y, object_solid) {
-		x += sign(horizontal_speed);
-	};
-	horizontal_speed = 0;
-};
-
-if place_meeting(x, y + vertical_speed, object_solid) {
-	while !place_meeting(x, y + sign(vertical_speed), object_solid) {
-		y += sign(vertical_speed);
-	};
-	vertical_speed = 0;	
-};
-
-// MOVE OBJECT
-x += horizontal_speed;
-y += vertical_speed;
+move();
 
 if place_meeting(x, y+1, object_solid) && !place_meeting(x, yprevious + 1, object_solid) {
 	current_x_scale = image_xscale * 1.2;
