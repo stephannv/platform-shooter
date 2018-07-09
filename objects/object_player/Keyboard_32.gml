@@ -9,6 +9,7 @@ if alarm[0] <= 0 {
 	var x_offset = lengthdir_x(20, gun_angle);
 	var y_offset = lengthdir_y(20, gun_angle);
 
-	instance_create_layer(gun_x + x_offset, y - sprite_height * .5 + y_offset, "Instances", object_bullet);
+	var bullet = instance_create_layer(gun_x + x_offset, y - sprite_height * .5 + y_offset, "Instances", object_bullet);
+	bullet.direction = gun_angle;
 	alarm[0] = bullet_cooldown;
 }
